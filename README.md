@@ -1,2 +1,2 @@
-# filter
-block words and mute users in a Discord server
+# Filter Bot
+Discord bot that deletes specific words and phrases containing specific words from messages. It also mutes the offending user for 1 hour. Replace token in the last line with your bot's token. Words that are preceded by msg.content.match are words that are only blocked when they are not contained within other words. These can be changed by replacing the words within /\b and \b/i. Words preceded by inclusive.match are blocked regardless of their inclusion in other words and ignore punctuation. These can be changed by replacing the words within / and /i. More words can be added by adding || inclusive.match(/word/i) after the first word.
